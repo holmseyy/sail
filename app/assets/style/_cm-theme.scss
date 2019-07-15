@@ -15,7 +15,7 @@
   }
 
   .CodeMirror-cursor {
-    border-left: 1px solid darken($textColor, 5%);
+    border-left: 2px solid #FF7597;
   }
 
   .CodeMirror-activeline-background {
@@ -124,12 +124,13 @@
 [data-platform=darwin] .cm-searching {
   background: transparentize(lighten($bgColor, 4%), 0.5);
 }
+
 .CodeMirror-dialog {
   z-index: 6;
   background: rgba(255, 255, 255, 0.1);
 
   /* no transparancy so overlapping the updater looks correct */
-  background: rgb(25, 64, 74);
+  background: rgb(0, 0, 0);
   color: rgba(255, 255, 255, 0.4);
   width: 100%;
   line-height: 2rem;
@@ -145,7 +146,7 @@
 
 .CodeMirror-dialog-top {
   border-bottom: 0;
-  top: -1rem;
+  top: 1rem;
 }
 
 .CodeMirror-dialog input {
@@ -178,5 +179,9 @@
 }
 
 .CodeMirror-search-hint {
+  display: none;
+}
+
+.CodeMirror-search-label {
   display: none;
 }

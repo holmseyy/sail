@@ -27,6 +27,10 @@
 
     <div id="root"></div>
 
+    <footer>
+      <span id="countWord"></span> words
+    </footer>
+
     <script>
       {
         const scripts = [];
@@ -53,5 +57,21 @@
       }
     </script>
     <script src="components\windowFunctions.js"></script>
+    <script>
+
+    function updateStatusBar() {
+      var area = document.getElementsByTagName("textarea")[0];
+      var counter = document.getElementById("countWord");
+      var text = area.innerHTML;
+
+      counter.innerHTML = "" + (text.split(/\b\S+\b/).length - 1);
+      area.setAttribute('value', area.value);
+    }
+
+    window.setInterval(function(){
+       updateStatusBar();
+    }, 100);  // Change Interval here to test. For eg: 5000 for 5 sec
+
+    </script>
   </body>
 </html>

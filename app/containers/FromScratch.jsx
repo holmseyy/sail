@@ -65,7 +65,7 @@ const checkboxSupport = cm => {
       const trimmedLine = currentLine.trimLeft();
 
       const checkbox = {
-        checked: '[✓] ',
+        checked: '[x] ',
         unchecked: '[ ] ',
       };
 
@@ -100,11 +100,11 @@ const checkboxSupport = cm => {
 export default class FromScratch extends React.Component {
   static defaultProps = {
     content:
-      '|> Welcome to FromScratch.\n\n\n' +
+      '|> Welcome to sail.\n\n\n' +
       "This app saves everything you type automatically, there's no need to save manually." +
       '\n\nYou can type neat arrows like these: ' +
       '->, -->, ->> and =>, courtesy of the font "Fira Code".\n\n' +
-      '\tFromScratch also does automatic indenting\n' +
+      '\tsail also does automatic indenting\n' +
       "\tand more. So delete this text & let's go!",
   };
 
@@ -290,7 +290,7 @@ export default class FromScratch extends React.Component {
           onChange={this.handleChange}
           options={options}
         />
-        <div className={this.state.mock}>Already saved! ;)</div>
+        <div className={this.state.mock}>Already saved! 😉</div>
 
         <div onClick={this.openDownloadPage} className={this.state.update}>
           There's an update available! Get version {latestVersion}

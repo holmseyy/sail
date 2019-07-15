@@ -3,7 +3,7 @@ Sail
 
 ## A simple but smart note-taking app
 
-FromScratch is a little app that you can use as a quick note taking or todo app.</p>
+sail is a little app that you can use as a quick note taking or todo app.</p>
 
 * Small and simple, the only UI is the text you type
 * Saves on-the-fly, no need to manually save
@@ -37,20 +37,13 @@ FromScratch is a little app that you can use as a quick note taking or todo app.
 * <kbd>alt</kbd> - show or hide menu (Windows only)
 * <kbd>cmd/ctrl+s</kbd> - ...this does nothing.
 
-## Download
-Recent downloads for macOS, Windows and Linux available on https://fromscratch.rocks
-
-For Arch users, [FromScratch is available on AUR](https://aur.archlinux.org/packages/fromscratch-bin/)
-
-For macOS, you can also install FromScratch via Homebrew: ```$ brew cask install fromscratch```
-
 ### Installation
 ```sh
 # Download from git
 git clone https://github.com/holmseyy/sail.git
 
 # Install dependencies
-cd fromscratch && npm install
+cd sail && npm install
 
 # build and run
 npm start
@@ -62,22 +55,22 @@ npm run dev
 **Portable Mode**
 `--portable`
 
-Lets you store all the files FromScratch generates in a specified location, such as a USB-stick or
+Lets you store all the files sail generates in a specified location, such as a USB-stick or
 other portable storage device. In this mode both the configuration files as well as your text content will be stored in
-a "userdata" directory alongside the FromScratch executable, or when given a directory as an argument, will store
+a "userdata" directory alongside the sail executable, or when given a directory as an argument, will store
 the files there.
 
-You can also use this to store the FromScratch configuration files, and the text content, in a synced cloud storage
+You can also use this to store the sail configuration files, and the text content, in a synced cloud storage
 folder.
 
 ```
-# run FromScratch in portable mode, saving data in application directory.
-fromscratch --portable
+# run sail in portable mode, saving data in application directory.
+sail --portable
 ```
 
 ```
-# run FromScratch in portable mode, saving data in custom directory.
-fromscratch --portable ~/fromscratch_data
+# run sail in portable mode, saving data in custom directory.
+sail --portable ~/sail_data
 ```
 **help**
 `-h, --help`
@@ -87,15 +80,15 @@ Prints help information
 ### FAQ
 *Where is my data saved?*
 
-Your data is saved in a plain text file content.txt. On Mac and Linux, this file is saved in ~/.fromscratch. On Windows
-this file is saved in a directory called ".fromscratch" in your userprofile directory.  
+Your data is saved in a plain text file content.txt. On Mac and Linux, this file is saved in ~/.sail. On Windows
+this file is saved in a directory called ".sail" in your userprofile directory.  
 
 *Can my data be saved in an alternate directory?*
 
 Yes! See the **portable mode** section under the **Command Line Arguments** heading above.
 
 ### Credits
-FromScratch is built upon these open source projects:
+sail is built upon these open source projects:
 	<a href="http://electron.atom.io">Electron</a>,
 	<a href="https://facebook.github.io/react/">React</a>,
 	<a href="https://github.com/tonsky/FiraCode">Fira Code</a>,
