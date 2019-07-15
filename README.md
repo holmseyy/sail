@@ -47,7 +47,7 @@ For macOS, you can also install FromScratch via Homebrew: ```$ brew cask install
 ### Installation
 ```sh
 # Download from git
-git clone https://github.com/holmseyy/fromscratch.git
+git clone https://github.com/holmseyy/sail.git
 
 # Install dependencies
 cd fromscratch && npm install
