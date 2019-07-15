@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-$bgColor: rgba(0, 43, 54, 1);
-$textColor: rgba(130, 150, 150, 1);
+$bgColor: rgba(18, 18, 18, 1);
+$textColor: rgba(255, 255, 255, 1);
 
 @font-face {
   font-family: "FiraCode";
@@ -15,6 +15,60 @@ $textColor: rgba(130, 150, 150, 1);
   src: url(../font/FiraCode-Retina.otf) format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../font/MaterialIcons-Regular.woff) format('woff'),
+    url(../font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+}
+
+.logo {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  color: #FF7597;
+
+  content: 'sail';
+}
+
+/* NAV LOGO SETTINGS
+   ============================= */
+.logo-nav {
+  float: left;
+  font-weight: 700;
+
+  margin-left: 8px;
+  margin-top: calc(16px - 11px);
+
+  font-size: 1rem;
+}
+
+/* SMALL LOGO SETTINGS
+   ============================= */
+.logo-small {
+  font-size: 0.8rem;
 }
 
 html {
@@ -49,6 +103,63 @@ body {
 body[data-platform=darwin] {
   background:transparent;
   font-family: "FiraCode-Retina";
+}
+
+nav {
+  position: fixed;
+  margin-left: 0px;
+  margin-top: 0px;
+
+  -webkit-app-region: drag;
+  z-index: 100;
+
+  width: 100%;
+  height: 32px;
+
+  background-color: #000; /* DEBUG:  */
+}
+
+.nav-buttons {
+  float: right;
+  -webkit-app-region: no-drag;
+  z-index: 1;
+
+  width: 192px;
+  height: 32px;
+}
+
+.nav-buttons__max, .nav-buttons__min, .nav-buttons__exit {
+  transition: 0.2s;
+  float: right;
+
+  width: 64px;
+  height: 32px;
+
+  background-color: rgba(255, 117, 151, 0.8);
+}
+
+.nav-buttons__max > i, .nav-buttons__min > i, .nav-buttons__exit > i {
+  cursor: default;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 8px;
+  width: 100%;
+  color: #fff;
+  z-index: 100;
+}
+
+.nav-buttons__max > i {
+  font-size: 0.9rem !important;
+  margin-top: 9px !important;
+}
+
+.nav-buttons__max:hover, .nav-buttons__min:hover, .nav-buttons__exit:hover {
+  transition: 0.2s;
+  background-color: rgba(255, 117, 151, 0.9);
+}
+
+.nav-buttons__exit:hover {
+  background-color: rgba(255, 117, 151, 1);
 }
 
 #root,
@@ -101,14 +212,14 @@ body[data-platform=darwin] {
     top: 0;
     width: 100%;
     height: 54px;
-    background: linear-gradient(to top, rgba(0, 43, 54, 0), rgba(0, 43, 54, 1) 5%);
+    background: linear-gradient(to top, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1) 5%);
   }
 
   &::after {
     top: auto;
     bottom: 0;
     height: 3rem;
-    background: linear-gradient(to bottom, rgba(0, 43, 54, 0), rgba(0, 43, 54, 1) 5%);
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1) 5%);
   }
 
   pre {

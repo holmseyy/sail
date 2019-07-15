@@ -1,6 +1,6 @@
 {
-  "name": "fromscratch",
-  "productName": "FromScratch",
+  "name": "sail",
+  "productName": "sail",
   "version": "1.4.3",
   "description": "simple autosaving scratchpad",
   "scripts": {
@@ -23,8 +23,8 @@
   },
   "browserslist": "electron 4.0",
   "build": {
-    "productName": "FromScratch",
-    "appId": "com.kilianvalkhof.FromScratch",
+    "productName": "sail",
+    "appId": "com.holmseyy.sail",
     "files": [
       "dist/",
       "node_modules/",
@@ -75,16 +75,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kilian/fromscratch/"
+    "url": "https://github.com/holmseyy/sail/"
   },
   "author": {
-    "name": "Kilian Valkhof",
-    "email": "kilian@kilianvalkhof.com",
-    "url": "https://kilianvalkhof.com"
+    "name": "Joseph Holmes"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kilian/fromscratch/issues"
+    "url": "https://github.com/holmseyy/sail/issues"
   },
   "keywords": [
     "electron",
@@ -147,7 +145,7 @@
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^1.2.6",
-    "url-loader": "^1.0.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.12.1",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.8",

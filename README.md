@@ -1,6 +1,4 @@
-<img src="https://fromscratch.rocks/assets/img/icon.png?">
-
-FromScratch
+Sail
 ===========
 
 ## A simple but smart note-taking app
@@ -17,7 +15,6 @@ FromScratch is a little app that you can use as a quick note taking or todo app.
 * Dark and Light theme
 * Portable mode support
 * Free
-
 
 ### Shortcuts
 
@@ -50,7 +47,7 @@ For macOS, you can also install FromScratch via Homebrew: ```$ brew cask install
 ### Installation
 ```sh
 # Download from git
-git clone https://github.com/kilian/fromscratch.git
+git clone https://github.com/holmseyy/fromscratch.git
 
 # Install dependencies
 cd fromscratch && npm install
@@ -98,12 +95,9 @@ this file is saved in a directory called ".fromscratch" in your userprofile dire
 Yes! See the **portable mode** section under the **Command Line Arguments** heading above.
 
 ### Credits
-
 FromScratch is built upon these open source projects:
 	<a href="http://electron.atom.io">Electron</a>,
 	<a href="https://facebook.github.io/react/">React</a>,
 	<a href="https://github.com/tonsky/FiraCode">Fira Code</a>,
 	<a href="http://codemirror.net/">CodeMirror</a> and
 	<a href="https://github.com/chentsulin/electron-react-boilerplate">Electron-react-boilerplate</a>.
-
-Thanks to @bittersweet for helping me set up IPC to work around a particularly nasty bug, @chentsulin for the electron-react-boilerplate, and @ctrauma for the portable bits.

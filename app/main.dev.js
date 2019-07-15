@@ -122,6 +122,7 @@ Optional arguments:
       darkTheme: true,
       titleBarStyle: 'hidden',
       autoHideMenuBar: true,
+      frame: false,
       transparent:  process.platform === 'darwin',
       webPreferences: {
         blinkFeatures: 'OverlayScrollbars',
@@ -264,13 +265,13 @@ Optional arguments:
           {
             label: 'Support',
             click() {
-              shell.openExternal('https://github.com/Kilian/fromscratch/issues');
+              shell.openExternal('https://github.com/holmseyy/fromscratch/issues');
             },
           },
           {
             label: `Check for updates (current: ${APPVERSION})`,
             click() {
-              shell.openExternal('https://github.com/Kilian/fromscratch/releases');
+              shell.openExternal('https://github.com/holmseyy/fromscratch/releases');
             },
           },
           {
@@ -354,13 +355,13 @@ Optional arguments:
             {
               label: 'Support',
               click() {
-                shell.openExternal('https://github.com/Kilian/fromscratch/issues');
+                shell.openExternal('https://github.com/holmseyy/fromscratch/issues');
               },
             },
             {
               label: `Check for updates (current: ${APPVERSION})`,
               click() {
-                shell.openExternal('https://github.com/Kilian/fromscratch/releases');
+                shell.openExternal('https://github.com/holmseyy/fromscratch/releases');
               },
             },
             {

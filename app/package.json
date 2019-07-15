@@ -5,16 +5,16 @@
   "main": "./main.prod.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kilian/fromscratch/"
+    "url": "https://github.com/holmseyy/sail/"
   },
   "author": {
-    "name": "Kilian Valkhof",
-    "email": "kilian@kilianvalkhof.com",
-    "url": "https://kilianvalkhof.com"
+    "name": "holmseyy Valkhof",
+    "email": "holmseyy@holmseyyvalkhof.com",
+    "url": "https://holmseyyvalkhof.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kilian/fromscratch/issues"
+    "url": "https://github.com/holmseyy/sail/issues"
   },
   "keywords": [
     "electron",
@@ -23,5 +23,5 @@
     "scratchpad",
     "codemirror"
   ],
-  "homepage": "https://github.com/kilian/fromscratch"
+  "homepage": "https://github.com/holmseyy/sail"
 }
